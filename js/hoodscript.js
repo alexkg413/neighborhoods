@@ -2,11 +2,11 @@
 ----- Config Vars: Change these to configure for your city or cities-------------
 ---------------------------*/
 var myCities = [  //NAME AND BOUNDS OF CITIES 
-  {name:"Rhode Island", bnds:[[41.29,-71.89],[42.03,-71.11]]},
+  {name:"Providence", bnds:[[41.772393,-71.474699],[41.863037,-71.376379]]},
 ]
 ,tblName = "rimap_v1" // cartoDB table name
 ,usrName = "alexkg413" // your cartoDB username
-,brandText = "RI Map" // top left text and link on site
+,brandText = "Providence Neighborhoods" // top left text and link on site
 ,brandLink = "http://providencemapcompany.com" //top left link on site
 ,giturl = "https://github.com/alexkg413/neighborhoods" //Only change this if you want to link to a fork you made, otherwise you can leave the link to the original repo
 ,twiturl = "https://twitter.com/alexkgellis" //Links to my twit acct, change it if you want or remove twitter link altogether
