@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title>neighborhoods</title>
-  <meta name="description" content="Mapping vernacular neighborhoods in Rhode Island" />
+  <title>Mapping Neighborhoods in Providence</title>
+  <meta name="description" content="Mapping neighborhoods in Providence" />
   <meta name="author" content="Alex KG Ellis" />
 
   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
@@ -29,13 +29,11 @@
     <div class="modal-content">
              <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Neighborhoods Mapping Project</h3>
+        <h3 id="myModalLabel">Mapping Providence Neighborhoods</h3>
       </div>
              <div class="modal-body">
-        <p> The goal of this site is to <b>collectively map neighborhoods</b> as an image of the city in maps and words.</p>
-        <p> No neighborhood names or boundaries are here to start with. <b>You make the map</b>. Real or imagined,
-                 within the city, or crossing municipal borders. Names, extents, and descriptions are up to you. After mapping, be sure to <b>View Maps</b>. <b>All the color on this site comes from your contributions</b>.</p>
-        <p><b>NEW download a shapefile of the data contributed so far, or get the source code!</b> Check the buttons in the bottom right.</p>
+        <p> The goal of this site is to <b>collectively map neighborhoods and villages</b> as an image of Providence in maps and words.</p>
+        <p> No neighborhood names or boundaries are here to start with. <b>You make the map</b>. Names, extents, and descriptions are up to you. After mapping, be sure to <b>View Maps</b>.</p>
         <p> <b>- Thanks!</b> </p>
       </div>
         <div class="modal-footer">
@@ -128,7 +126,7 @@
         </form>
         <div class="modal-footer">
           <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-          <button id="allSubmitBtn" class="btn btn-success">Save Neighborhood!</button>
+          <button id="allSubmitBtn" class="btn btn-success">Save Map!</button>
         </div> 
       </div>
     </div>
@@ -145,7 +143,7 @@
         <h3 id="myModalLabel">Is this the data you are looking for?</h3>
       </div>
       <div class="modal-body">
-        <p>You are about to download the entire neighborhood shapefile. It contains all polygons, including those that have been flagged as junk or inappropriate. Those items can be identified where the flag field=true. There are some great things to map here, so if you get the data, please let us know what you do with it!.</p>
+        <p>You are about to download the entire Providence shapefile. It contains all polygons, including those that have been flagged as junk or inappropriate. Those items can be identified where the flag field=true. There are some great things to map here, so if you get the data, please let us know what you do with it!.</p>
       </div>
       <div class="modal-footer">
         <button class="btn btn-success" id="downloadBtn" >Gimme My Data!</button>
@@ -160,13 +158,13 @@
 <div id="map"></div>
 
 <div style="position:absolute; top: 50px; left: 30px; z-index:999;pointer-events:none">
-  <h1 id="mapTitle" style="margin-bottom:0px">RI<font size="4"><b>NEIGHBORHOODS</b></font></h1>
+  <h1 id="mapTitle" style="margin-bottom:0px">P<font size="4"><b>rovidence</b></font></h1>
 </div>  
 <div style="position:absolute; top: 110px; left: 30px; z-index:999;pointer-events:none">
   <div  id="btnBar" class="noMouse">
     <button id="startPolyBtn" class="btn btn-xs btn-default yesMouse" type="button"> <i class="glyphicon glyphicon-pencil icon-white"> </i> Start Mapping</button>
     <button id="deletePolyBtn" style:""  class="btn btn-xs btn-default  yesMouse" type="button"> <i class="glyphicon glyphicon-trash icon-white"> </i> Cancel Map</button>
-    <button id="submitPolyBtn" style="display:none;" class="btn btn-xs  btn-default btn-success  yesMouse" type="button">Save Neighborhood</button>
+    <button id="submitPolyBtn" style="display:none;" class="btn btn-xs  btn-default btn-success  yesMouse" type="button">Save</button>
   </div>
 </div>
 <div class="noMouse" style="position:absolute; top: 110px; left: 30px; z-index:999;pointer-events:none;min-width:300px;">
